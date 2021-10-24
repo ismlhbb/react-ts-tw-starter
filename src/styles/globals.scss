@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply lg:text-5xl text-4xl font-black font-primary;
+  }
+
+  h2 {
+    @apply lg:text-4xl text-3xl font-black font-primary;
+  }
+
+  h3 {
+    @apply lg:text-3xl text-2xl font-extrabold font-primary;
+  }
+
+  h4 {
+    @apply lg:text-2xl text-xl font-extrabold font-primary;
+  }
+
+  h5 {
+    @apply lg:text-xl text-lg font-extrabold font-primary;
+  }
+
+  h6 {
+    @apply lg:text-lg text-base font-bold font-primary;
+  }
+
+  p {
+    @apply text-base font-primary;
+  }
+
+  label {
+    @apply inline-block font-primary;
+  }
+
+  body {
+    @apply text-sm font-primary md:text-base;
+  }
+}
+
+svg {
+  @apply font-primary;
+}
+
+.layout {
+  /* 750px */
+  /* max-width: 43.75rem; */
+
+  /* 1100px */
+  max-width: 68.75rem;
+  @apply w-11/12 mx-auto;
+}
