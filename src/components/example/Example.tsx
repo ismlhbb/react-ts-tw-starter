@@ -3,8 +3,9 @@ import { connect } from 'react-redux';
 import { useAppDispatch } from 'app/hooks';
 import { RootState } from 'app/store';
 import { Meta } from 'models/Meta';
-import Button from 'components/buttons/Button';
 import * as exampleThunks from './example.thunks';
+import Button from 'components/buttons/Button';
+import CustomLink from 'components/links/CustomLink';
 
 const Example: React.FC<LinkStateProps> = ({
   currentRunningOperation,
@@ -30,9 +31,7 @@ const Example: React.FC<LinkStateProps> = ({
         {exampleData ? (
           exampleData.map((pokemon: any) => (
             <p key={pokemon.name}>
-              <a href={pokemon.url} target='_blank' rel='noopener noreferrer'>
-                {pokemon.name}
-              </a>
+              <CustomLink to={pokemon.url}>{pokemon.name}</CustomLink>
             </p>
           ))
         ) : currentRunningOperation != 'idle' ? (
