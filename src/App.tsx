@@ -14,8 +14,7 @@ const App = () => {
     <Router>
       <ScrollRestoration />
       <Switch>
-        <Redirect exact from='/' to={{ pathname: '/home' }} />
-        <Route path='/home' component={HomeLayout} />
+        <Route path='/' component={HomeLayout} />
         <Route path='*' component={NotFoundPage} />
       </Switch>
     </Router>
