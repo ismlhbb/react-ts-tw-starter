@@ -4,7 +4,7 @@ import UnstyledLink from 'components/links/UnstyledLink';
 
 const links = [
   { to: '/counter', label: 'Counter' },
-  { to: '/example', label: 'Example' },
+  { to: '/example', label: 'Fetch' },
 ];
 
 export default function Header() {
