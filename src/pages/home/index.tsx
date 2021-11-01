@@ -21,10 +21,10 @@ export default function Home() {
         <CustomLink to={Data.projectLink}>See the repository</CustomLink>
       </p>
 
-      <ButtonLink className='mt-6' to='/example' variant='light'>
+      <ButtonLink className='mt-6' to='/counter' variant='light'>
         Counter example
       </ButtonLink>
-      <ButtonLink className='mt-2' to='/counter' variant='light'>
+      <ButtonLink className='mt-2' to='/example' variant='light'>
         Fetch example
       </ButtonLink>
 
