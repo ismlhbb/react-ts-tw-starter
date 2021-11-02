@@ -3,6 +3,9 @@
 🔥 An opinionated React with Typescript, Tailwind and Redux Starter.
 
 ![[object Object]](https://socialify.git.ci/ismlhbb/react-ts-tw-starter/image?descriptionEditable=An%20opinionated%20React%20%2B%20Typescript%20%2B%20Tailwind%20%2B%20Redux%20Starter.%20%0ANote%3A%20made%20for%20personal%20use&font=Inter&language=1&owner=1&pattern=Charlie%20Brown&theme=Dark)
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/git?s=https://github.com/ismlhbb/react-ts-tw-starter) [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ismlhbb/react-ts-tw-starter)
+
 ## Demo
 
 [See Example](https://react-ts-tw-starter.vercel.app/)
