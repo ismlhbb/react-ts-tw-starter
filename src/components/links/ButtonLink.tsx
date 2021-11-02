@@ -22,14 +22,15 @@ export default function ButtonLink({
     <UnstyledLink
       {...rest}
       className={clsx(
-        'py-2 px-4 inline-block rounded font-bold hover:text-primary-400 animated-underline',
+        'py-2 px-4 inline-block rounded font-bold animated-underline',
         'border border-gray-600 shadow-sm',
-        'focus:outline-none focus-visible:text-primary-400',
+        'focus:outline-none',
         {
-          'bg-dark text-white': variant === 'dark',
+          'bg-dark text-white hover:text-primary focus-visible:text-primary':
+            variant === 'dark',
           'bg-white text-dark hover:bg-gray-200 hover:text-dark focus-visible:text-dark border-gray-400':
             variant === 'light',
-          'bg-primary-400 text-black hover:bg-primary-400/90 hover:text-black border-primary-500 focus-visible:text-dark':
+          'bg-primary text-white hover:bg-primary/90 hover:text-white border-primary-darker focus-visible:text-white':
             variant === 'primary',
         },
         className
@@ -37,8 +38,8 @@ export default function ButtonLink({
       style={
         variant === 'primary'
           ? ({
-              '--clr-primary-400': 'white',
-              '--clr-primary-500': 'white',
+              '--clr-primary': 'white',
+              '--clr-primary-darker': 'white',
             } as React.CSSProperties)
           : undefined
       }

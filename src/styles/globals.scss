@@ -8,10 +8,10 @@
   /* Customize these variable */
   /* https://github.com/adamwathan/tailwind-css-variable-text-opacity-demo */
   --tw-clr-primary: 238, 66, 77;
-  --tw-clr-primary-darker: 206, 33, 45;
+  --tw-clr-primary-darker: 190, 23, 31;
 
-  --clr-primary: rgb(var(--tw-clr-primary)); /* ##ee424d */
-  --clr-primary-darker: rgb(var(--tw-clr-primary)); /* #ce212d */
+  --clr-primary: rgb(var(--tw-clr-primary)); /* #ee424d */
+  --clr-primary-darker: rgb(var(--tw-clr-primary-darker)); /* #96171f */
 }
 
 @layer base {

@@ -28,15 +28,15 @@ export default function Button({
       {...rest}
       disabled={disabled}
       className={clsx(
-        'py-2 px-4 rounded font-bold hover:text-primary-400',
+        'py-2 px-4 rounded font-bold',
         'border border-gray-600 shadow-sm',
-        'focus:outline-none focus-visible:text-primary-400',
+        'focus:outline-none',
         {
-          'bg-dark disabled:bg-gray-700 text-white disabled:hover:text-white':
+          'bg-dark disabled:bg-gray-700 text-white hover:text-primary focus-visible:text-primary disabled:hover:text-white':
             variant === 'dark',
           'bg-white disabled:bg-gray-200 text-dark hover:bg-gray-200 hover:text-dark focus-visible:text-dark border-gray-400 disabled:hover:text-dark':
             variant === 'light',
-          'bg-primary-400 text-black hover:bg-primary-400/90 hover:text-black border-primary-500 disabled:hover:bg-primary-400 disabled:brightness-75  focus-visible:text-dark':
+          'bg-primary text-black hover:bg-primary/90 hover:text-black border-primary-darker disabled:hover:bg-primary disabled:brightness-75  focus-visible:text-dark':
             variant === 'primary',
         },
         'disabled:cursor-not-allowed',
@@ -48,8 +48,8 @@ export default function Button({
       style={
         variant === 'primary'
           ? ({
-              '--clr-primary-400': 'white',
-              '--clr-primary-500': 'white',
+              '--clr-primary': 'white',
+              '--clr-primary-darker': 'white',
             } as React.CSSProperties)
           : undefined
       }

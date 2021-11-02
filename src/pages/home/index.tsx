@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { useHistory } from 'react-router';
 import CustomLink from 'components/links/CustomLink';
 import ButtonLink from 'components/links/ButtonLink';
 
@@ -21,10 +20,10 @@ export default function Home() {
         <CustomLink to={Data.projectLink}>See the repository</CustomLink>
       </p>
 
-      <ButtonLink className='mt-6' to='/counter' variant='light'>
+      <ButtonLink className='mt-6' to='/counter' variant='primary'>
         Counter example
       </ButtonLink>
-      <ButtonLink className='mt-2' to='/example' variant='light'>
+      <ButtonLink className='mt-2' to='/example' variant='dark'>
         Fetch example
       </ButtonLink>
 
