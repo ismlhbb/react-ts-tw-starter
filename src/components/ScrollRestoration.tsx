@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { useLocation } from 'react-router-dom';
 
-export default function ScrollRestoration() {
+export default function ScrollRestoration(): any {
   const { pathname } = useLocation();
 
   React.useEffect(() => {
