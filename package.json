@@ -45,12 +45,12 @@
     "build": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject",
-    "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\"",
-    "lint:fix": "eslint --fix \"src/**/*.{js,jsx,ts,tsx}\"",
-    "lint:strict": "eslint --max-warnings=0 \"src/**/*.{js,jsx,ts,tsx,css,scss,md,json}\"",
+    "lint": "eslint src/**/*.{js,jsx,ts,tsx}",
+    "lint:fix": "eslint --fix src/**/*.{js,jsx,ts,tsx}",
+    "lint:strict": "eslint --max-warnings=0 src/**/*.{js,jsx,ts,tsx,css,scss,md,json}",
     "tsc": "tsc",
-    "prettier:check": "prettier -c \"src/**/*.{js,jsx,ts,tsx,css,scss,md,json}\"",
-    "format": "prettier -w \"src/**/*.{js,jsx,ts,tsx,css,scss,md,json}\" --config ./.prettierrc.js",
+    "prettier:check": "prettier -c src/**/*.{js,jsx,ts,tsx,css,scss,md,json}",
+    "format": "prettier -w src/**/*.{js,jsx,ts,tsx,css,scss,md,json} --config ./.prettierrc.js",
     "prepare": "husky install"
   },
   "eslintConfig": {
