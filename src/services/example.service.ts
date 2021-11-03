@@ -9,7 +9,7 @@ import { Api, MediaType } from 'constants/api';
 
 export class ExampleService {
   private static api: AxiosInstance = Axios.create({
-    baseURL: process.env.REACT_APP_API_BASE_URL,
+    baseURL: Api.BaseURL,
   });
 
   /**
