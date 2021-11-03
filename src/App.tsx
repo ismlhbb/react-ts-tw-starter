@@ -1,10 +1,5 @@
 import * as React from 'react';
-import {
-  BrowserRouter as Router,
-  Redirect,
-  Route,
-  Switch,
-} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import ScrollRestoration from 'components/ScrollRestoration';
 import HomeLayout from 'layouts/home/HomeLayout';
 import NotFoundPage from 'pages/404';

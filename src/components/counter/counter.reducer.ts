@@ -45,7 +45,7 @@ export const counterSlice = createSlice({
       .addMatcher(ReduxUtils.isPendingAction(SLICE_NAME), (state, action) => {
         state.currentRunningOperation = action.type;
       })
-      .addMatcher(ReduxUtils.isRejectedAction(SLICE_NAME), (state, action) => {
+      .addMatcher(ReduxUtils.isRejectedAction(SLICE_NAME), (state) => {
         state.currentRunningOperation = 'idle';
       })
       .addDefaultCase((state) => {

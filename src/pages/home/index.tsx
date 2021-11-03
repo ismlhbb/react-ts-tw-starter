@@ -1,12 +1,21 @@
 import * as React from 'react';
 import CustomLink from 'components/links/CustomLink';
 import ButtonLink from 'components/links/ButtonLink';
+import UnstyledLink from 'components/links/UnstyledLink';
 
 const Data = {
   projectLink: 'https://github.com/ismlhbb/react-ts-tw-starter',
   projectName: 'React + Typescript + Tailwind + Redux Starter',
   profileLink: 'https://ismailhabibi.netlify.app',
   profileName: 'Ismail Habibi Herman',
+  vercelDeployUrl:
+    'https://vercel.com/import/git?s=https://github.com/ismlhbb/react-ts-tw-starter',
+  netlifyDeployUrl:
+    'https://app.netlify.com/start/deploy?repository=https://github.com/ismlhbb/react-ts-tw-starter',
+  vercelButtonUrl: 'https://vercel.com/button',
+  netlifyButtonUrl: 'https://www.netlify.com/img/deploy/button.svg',
+  generateTemplateUrl:
+    'https://github.com/ismlhbb/react-ts-tw-starter/generate',
 };
 
 export default function Home() {
@@ -14,17 +23,47 @@ export default function Home() {
     <div className='flex flex-col items-center justify-center text-center min-h-main'>
       <h1>{Data.projectName}</h1>
       <p className='mt-2 text-sm text-gray-700'>
-        🔥 An opinionated React + Typescript + Tailwind + Redux Starter.
+        🔥 An opinionated React.js with Typescript, Tailwind and Redux Starter.
       </p>
       <p className='mt-2 text-sm text-gray-800'>
         <CustomLink to={Data.projectLink}>See the repository</CustomLink>
       </p>
 
-      <ButtonLink className='mt-6' to='/counter' variant='primary'>
+      <ButtonLink className='mt-6' to='/counter'>
         Counter example
       </ButtonLink>
-      <ButtonLink className='mt-2' to='/example' variant='dark'>
+      <ButtonLink className='my-4' to='/example'>
         Fetch example
+      </ButtonLink>
+      <div className='flex justify-around w-64 align-center'>
+        <UnstyledLink to={Data.vercelDeployUrl}>
+          <img
+            width={92}
+            height={32}
+            src={Data.vercelButtonUrl}
+            alt='Vercel deploy button'
+          />
+        </UnstyledLink>
+        <UnstyledLink to={Data.netlifyDeployUrl}>
+          <img
+            width={146}
+            height={32}
+            src={Data.netlifyButtonUrl}
+            alt='Netlify deploy button'
+          />
+        </UnstyledLink>
+      </div>
+
+      <code className='p-2 mt-2 bg-gray-200 rounded-lg'>
+        npx degit ismlhbb/react-ts-tw-starter {'<YOUR_APP_NAME>'}
+      </code>
+
+      <ButtonLink
+        className='mt-2'
+        variant='primary'
+        to={Data.generateTemplateUrl}
+      >
+        Use this template
       </ButtonLink>
 
       <footer className='absolute text-gray-600 bottom-2'>
