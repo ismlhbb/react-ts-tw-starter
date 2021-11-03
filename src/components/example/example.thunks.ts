@@ -1,9 +1,6 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
-import { RootState, AppThunk } from 'app/store';
-import { AxiosError } from 'axios';
-import { Meta } from 'models/Meta';
-import { exampleActions } from './example.reducer';
 import { ExampleService } from 'services/example.service';
+import { ThunkAPI } from 'utils/redux';
 
 // Here we create our thunks so we can dispatch multiple action creators in asynchronous matter.
 // The function below is called a thunk and allows us to perform async logic. It
@@ -18,7 +15,7 @@ export const getExampleData = createAsyncThunk<
   // First argument to the payload creator
   undefined,
   // Types for ThunkAPI
-  { rejectValue: Meta }
+  ThunkAPI
 >('@example/getExampleData', async (args, { rejectWithValue }) => {
   try {
     const response = await ExampleService.getSampleData();
@@ -34,7 +31,7 @@ export const getExampleData = createAsyncThunk<
 export const editExampleData = createAsyncThunk<
   void,
   { id: string; name: string; age: string },
-  { rejectValue: Meta }
+  ThunkAPI
 >(
   '@example/editExampleData',
   async ({ id, name, age }, { rejectWithValue }) => {

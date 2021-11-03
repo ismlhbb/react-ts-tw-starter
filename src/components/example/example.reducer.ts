@@ -1,18 +1,19 @@
-import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { createSlice } from '@reduxjs/toolkit';
 import { Meta } from 'models/Meta';
 import { ReduxUtils } from 'utils/redux';
+import { Pokemon } from 'models/Example';
 import { editExampleData, getExampleData } from './example.thunks';
 
 export interface ExampleState {
   currentRunningOperation: string;
   meta: Meta;
-  exampleData: unknown;
+  exampleData: Pokemon[] | unknown;
 }
 
 const initialState: ExampleState = {
   currentRunningOperation: 'idle',
   meta: { code: '', message: '' },
-  exampleData: null,
+  exampleData: [],
 };
 
 const SLICE_NAME = '@example';
