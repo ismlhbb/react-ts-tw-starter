@@ -23,6 +23,8 @@ npx degit ismlhbb/react-ts-tw-starter <APP_NAME>
 
 ```bash
 yarn start
+#or
+npm run start
 ```
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result. 
 
