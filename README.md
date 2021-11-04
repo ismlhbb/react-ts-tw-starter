@@ -10,6 +10,7 @@ This is an opinionated [React.js](https://reactjs.org/) project bootstrapped wit
 ## Demo
 
 [See Example](https://react-ts-tw-starter.vercel.app/)
+
 ## Getting Started
 
 ### Installation
@@ -18,6 +19,16 @@ You can either click [**Use this template**](https://github.com/ismlhbb/react-ts
 
 ```bash
 npx degit ismlhbb/react-ts-tw-starter <APP_NAME>
+```
+
+### Setup Environment Variable
+
+Before run the project, you have create a `.env` or `.env.local` file in the root of your project.
+
+```bash
+cp .env.example .env.local
+#or
+cp .env.example .env
 ```
 
 ### Run Locally
