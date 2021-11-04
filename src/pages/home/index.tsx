@@ -28,14 +28,11 @@ export default function Home() {
       <p className='mt-2 text-sm text-gray-800'>
         <CustomLink to={Data.projectLink}>See the repository</CustomLink>
       </p>
-
-      <ButtonLink className='mt-6' to='/counter'>
-        Counter example
-      </ButtonLink>
-      <ButtonLink className='my-4' to='/example'>
-        Fetch example
-      </ButtonLink>
-      <div className='flex justify-around w-64 align-center'>
+      <div className='flex justify-center gap-1 mt-2 align-center'>
+        <ButtonLink to='/counter'>Counter example</ButtonLink>
+        <ButtonLink to='/example'>Fetch example</ButtonLink>
+      </div>
+      <div className='flex justify-center gap-1 mt-2 align-center'>
         <UnstyledLink to={Data.vercelDeployUrl}>
           <img
             width={92}
@@ -53,11 +50,9 @@ export default function Home() {
           />
         </UnstyledLink>
       </div>
-
       <code className='p-2 mt-2 bg-gray-200 rounded-lg'>
         npx degit ismlhbb/react-ts-tw-starter {'<YOUR_APP_NAME>'}
       </code>
-
       <ButtonLink
         className='mt-2'
         variant='primary'
@@ -65,7 +60,6 @@ export default function Home() {
       >
         Use this template
       </ButtonLink>
-
       <footer className='absolute text-gray-600 bottom-2'>
         © {new Date().getFullYear()} By{' '}
         <CustomLink to={Data.profileLink}>{Data.profileName}</CustomLink>
