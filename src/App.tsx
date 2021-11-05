@@ -1,17 +1,16 @@
 import * as React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import ScrollRestoration from 'components/ScrollRestoration';
-import HomeLayout from 'layouts/home/HomeLayout';
-import NotFoundPage from 'pages/404';
+import PageLoadingBar from 'components/PageLoadingBar';
+import RouteList from 'config/RouteList';
 
 const App = () => {
   return (
     <Router>
       <ScrollRestoration />
-      <Switch>
-        <Route path='/' component={HomeLayout} />
-        <Route path='*' component={NotFoundPage} />
-      </Switch>
+      <React.Suspense fallback={<PageLoadingBar isFallback={true} />}>
+        <RouteList />
+      </React.Suspense>
     </Router>
   );
 };
