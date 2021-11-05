@@ -15,7 +15,8 @@ const HomeLayout = () => {
       <main>
         <section className='bg-gray-50'>
           <div className='layout'>
-            <React.Suspense fallback={<PageLoadingBar />}>
+            <PageLoadingBar isFallback={false} />
+            <React.Suspense fallback={<PageLoadingBar isFallback={true} />}>
               <Switch>
                 <Route exact path='/' component={Home} />
                 <Route exact path='/counter' component={CounterPage} />

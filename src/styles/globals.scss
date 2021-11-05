@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap');
-@import 'variables';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -58,6 +57,20 @@
 
 svg {
   @apply font-primary;
+}
+
+#nprogress {
+  pointer-events: none;
+}
+
+#nprogress .bar {
+  background: #ee424d;
+  position: fixed;
+  z-index: 1031;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
 }
 
 .layout {
