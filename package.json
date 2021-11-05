@@ -18,6 +18,7 @@
     "@types/react-dom": "^16.9.8",
     "axios": "^0.24.0",
     "clsx": "^1.1.1",
+    "nprogress": "^0.2.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.3.1",
@@ -74,6 +75,7 @@
   "devDependencies": {
     "@commitlint/cli": "^13.2.1",
     "@commitlint/config-conventional": "^13.2.0",
+    "@types/nprogress": "^0.2.0",
     "@types/react-redux": "^7.1.20",
     "@types/react-router": "^5.1.17",
     "@types/react-router-dom": "^5.3.1",
