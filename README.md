@@ -1,11 +1,10 @@
 # React + Typescript + Tailwind + Redux Starter
 
-![[object Object]](https://socialify.git.ci/ismlhbb/react-ts-tw-starter/image?descriptionEditable=An%20opinionated%20React%20%2B%20Typescript%20%2B%20Tailwind%20%2B%20Redux%20Starter.%20%0ANote%3A%20made%20for%20personal%20use&font=Inter&language=1&owner=1&pattern=Charlie%20Brown&theme=Dark)
+![[object Object]](https://socialify.git.ci/ismlhbb/react-ts-tw-starter/image?language=1&name=1&owner=1&pattern=Charlie%20Brown&theme=Dark)
 
 [![CodeFactor](https://www.codefactor.io/repository/github/ismlhbb/react-ts-tw-starter/badge)](https://www.codefactor.io/repository/github/ismlhbb/react-ts-tw-starter)
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/git?s=https://github.com/ismlhbb/react-ts-tw-starter) [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ismlhbb/react-ts-tw-starter)
-
 
 This is an opinionated [React.js](https://reactjs.org/) project bootstrapped with [`create-react-app`](https://github.com/facebook/create-react-app), added with [**TypeScript**](https://www.typescriptlang.org), [**TailwindCSS**](https://tailwindcss.com) and [**Redux**](https://redux-toolkit.js.org/) setup.
 
@@ -40,7 +39,8 @@ yarn start
 #or
 npm run start
 ```
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result. 
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ## References
 
