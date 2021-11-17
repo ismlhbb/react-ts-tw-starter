@@ -10,7 +10,7 @@ This is an opinionated [React.js](https://reactjs.org/) project bootstrapped wit
 
 ## Demo
 
-[See Example](https://react-ts-tw-starter.vercel.app/)
+[See Example](https://react-ts-tw.ismlhbb.xyz/)
 
 ## Getting Started
 
